@@ -14,13 +14,12 @@ public class EmployerManager implements EmployerService{
 	
 	@Autowired
 	 public EmployerManager(EmployerDao employerDao) {
-		 super();
+		super();
 		this.employerDao = employerDao;
 	}
 
 	@Override
 	public List<Employer> getAll() {
-		// TODO Auto-generated method stub
 		return this.employerDao.findAll();
 	}
 
